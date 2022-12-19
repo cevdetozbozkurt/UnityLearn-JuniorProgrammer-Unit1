@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerControllerX : MonoBehaviour
 {
     public GameObject propeller; 
-    private float speed = 0;
+    private float speed = 10;
     private float rotationSpeed = 100;
     private float verticalInput;
     
