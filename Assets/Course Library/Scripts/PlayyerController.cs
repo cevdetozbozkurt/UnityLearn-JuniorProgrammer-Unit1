@@ -8,7 +8,8 @@ public class PlayyerController : MonoBehaviour
     public float horizontalInput;
     public float speed = 10.0f;
     public float xRange = 10.0f;
-    
+
+    public GameObject projectilePrefab;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,5 +29,11 @@ public class PlayyerController : MonoBehaviour
         }
         horizontalInput = Input.GetAxis("Horizontal1");
         transform.Translate(Vector3.right * horizontalInput * Time.deltaTime *speed);
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            // Launch a projecttile from player
+        }
+        
     }
 }
