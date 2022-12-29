@@ -32,7 +32,7 @@ public class PlayyerController : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            // Launch a projecttile from player
+            Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
         }
         
     }
